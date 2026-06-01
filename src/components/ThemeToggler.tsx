@@ -21,9 +21,9 @@ export default function ThemeToggle() {
         onChange={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       />
 
-      <FiSun className="swap-off h-10 w-10 cursor-pointer text-[#ffc0cb]" />
+      <FiSun className="swap-off h-5 w-5 cursor-pointer text-[#ffc0cb]" />
 
-      <FiMoon className="swap-on h-10 w-10 cursor-pointer text-gray-600" />
+      <FiMoon className="swap-on h-5 w-5 cursor-pointer text-gray-600" />
     </label>
   );
 }
