@@ -10,55 +10,11 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-:root {
-  --highlight-color: pink;
-  --strikeoff-color: black;
-}
-
-.dark {
-  --highlight-color: #9932cc;
-  --strikeoff-color: white;
+  scroll-behavior: smooth;
 }
 
 .logo-font {
   font-family: "Handlee", cursive;
   font-weight: 700;
   font-style: normal;
-}
-
-.icon-container {
-  display: inline-flex;
-  padding: 12px;
-  /* font-size: 20px; */
-  background-color: #f3f4f6;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #000;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
-    inset -2px -2px 5px rgba(255, 255, 255, 0.7);
-}
-
-.icon-container:hover {
-  transform: translateY(-5px) scale(1); /* Bounces up */
-  color: #4b5563; /* Dark grey on hover */
-  background-color: #e5e7eb; /* Slightly darker grey on hover */
-}
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.marquee {
-  animation: marquee 20s linear infinite;
-}
-
-.marquee:hover {
-  animation-play-state: paused;
 }
