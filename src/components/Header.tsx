@@ -8,7 +8,7 @@ import ThemeToggle from "@/components/ThemeToggler";
 
 export default function Header() {
   return (
-    <header className="sticky top-4 z-50 flex items-center justify-between px-6 py-3 mb-8 mt-4 bg-white/30 dark:bg-slate-900/30 backdrop-blur-lg border border-zinc-200/50 dark:border-zinc-800/50 rounded-full shadow-sm">
+    <header className="sticky top-4 z-50 flex items-center justify-between px-6 py-3 mb-8 mt-4 bg-white/30 dark:bg-slate-900/30 backdrop-blur-lg border border-zinc-200/50 dark:border-zinc-800/50 rounded-full shadow-sm transition-all duration-300 hover:border-zinc-300/80 dark:hover:border-zinc-700/80 hover:shadow-md hover:shadow-zinc-300/50 dark:hover:shadow-zinc-700/50">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
