@@ -9,9 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sahil Gupta",
   description: "Software Engineer & Full Stack Developer",
-  icons: {
-    icon: [{ url: "/favicon.ico", sizes: "any" }],
-  },
 };
 
 export default function RootLayout({

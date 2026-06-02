@@ -21,7 +21,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden border border-zinc-200 dark:border-zinc-700">
             <Image
-              src="/assets/MyPhoto.jpg"
+              src="/assets/MyPhoto.png"
               alt="Sahil Gupta"
               width={40}
               height={40}
