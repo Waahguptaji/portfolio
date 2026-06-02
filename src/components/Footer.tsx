@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AnimatedSectionWrapper from "@/components/AnimatedSectionWrapper";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -44,6 +44,17 @@ export default function Footer() {
           >
             <Linkedin className="w-4 h-4" />
             LinkedIn
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+            href="mailto:sahil.work742@gmail.com"
+            className="flex items-center gap-2 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+          >
+            <Mail className="w-4 h-4" />
+            Email
           </motion.a>
         </div>
       </footer>

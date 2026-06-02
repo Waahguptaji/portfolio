@@ -15,21 +15,24 @@ export default function Header() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="flex items-center gap-3 cursor-pointer"
+        className="cursor-pointer"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
-        <div className="w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden border border-zinc-200 dark:border-zinc-700">
-          <Image
-            src="/assets/MyPhoto.jpg"
-            alt="Sahil Gupta"
-            width={40}
-            height={40}
-            className="w-full h-full object-cover"
-            priority
-          />
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden border border-zinc-200 dark:border-zinc-700">
+            <Image
+              src="/assets/MyPhoto.jpg"
+              alt="Sahil Gupta"
+              width={40}
+              height={40}
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
+          <span className="font-semibold text-lg tracking-tight logo-font text-xl">
+            Sahil
+          </span>
         </div>
-        <span className="font-semibold text-lg tracking-tight logo-font text-xl">
-          Sahil
-        </span>
       </motion.div>
       <nav className="flex items-center gap-1 md:gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400">
         <motion.div

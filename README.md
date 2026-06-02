@@ -4,47 +4,33 @@ A portfolio showcasing my skills, experiences, and projects as a Full Stack Deve
 
 ## Live Site
 
-Visit the live site at [waahguptaji.tech](https://waahguptaji.tech)
+Visit the live site at [waahguptaji.in](https://waahguptaji.in)
 
 ## Features
 
-- **Responsive Design:** Optimized for all devices.
-- **Dark Mode:** Toggle between light and dark themes.
-- **Animations:** Interactive effects using Framer Motion and Rough Notation.
-- **Dynamic Content:** Skills, projects, and experiences rendered dynamically.
+- **Minimalist & Premium UI:** Clean typography, glassmorphism, and a beautiful ambient background glow.
+- **Responsive Design:** Flawlessly optimized for all mobile, tablet, and desktop devices.
+- **Dark Mode:** Seamless toggling between light and dark themes with Next-Themes.
+- **Smooth Animations:** High-performance entrance, hover, and tap interactions powered by Framer Motion.
+- **Dynamic Content:** Project and experience data driven cleanly through constant files.
 
 ## Technologies
 
-- **Frontend:** Next.js, React.js, TypeScript, Tailwind CSS, DaisyUI
-- **Animations:** Framer Motion, Rough Notation
-- **Tools:** Git, GitHub, Azure DevOps, Postman, Figma
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Frontend:** React, TypeScript, [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Deployment:** Vercel
 
 ### Project Structure
 
-.
-├── components
-│ ├── Header.tsx
-│ ├── Hero.tsx
-│ ├── Skills.tsx
-│ ├── WhatIDo.tsx
-│ ├── Projects.tsx
-│ ├── WorkEx.tsx
-│ └── ContactMe.tsx
-├── pages
-│ ├── index.tsx
-│ ├── about.tsx
-│ ├── experience.tsx
-│ ├── blogs.tsx
-│ └── contact.tsx
-├── public
-│ ├── assets
-│ │ ├── light
-│ │ └── dark
-│ └── resume.pdf
-├── styles
-│ ├── globals.css
-│ └── tailwind.css
-├── .env.local
-├── next.config.js
-├── tailwind.config.js
-└── README.md
+```text
+src
+├── app/               # Next.js App Router (layout, pages, globals.css)
+├── components/        # React components (Header, Hero, Experience, Projects, Footer, AmbientGlow)
+├── constants/         # Data files for skills, projects, and work experience
+└── lib/               # Custom hooks and utility functions
+
+public
+└── assets/            # Static files, images, and resume
+```

@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} h-full bg-white dark:bg-slate-900`}>
+      <body
+        className={`${inter.className} h-full bg-white dark:bg-slate-900 selection:bg-zinc-200 dark:selection:bg-zinc-700 selection:text-zinc-900 dark:selection:text-zinc-50`}
+      >
         <Providers>
           {/* Global Ambient Glow */}
           <AmbientGlow />
