@@ -3,11 +3,12 @@ import React from "react";
 import { projects } from "@/constants/projects";
 import { motion } from "framer-motion";
 import AnimatedSectionWrapper from "@/components/AnimatedSectionWrapper";
+import { ArrowUpRight } from "lucide-react";
 
 const MyWork = () => {
   return (
     <AnimatedSectionWrapper id="work">
-      <div className="py-8">
+      <div>
         {/* Clean, Typography-Driven Header */}
         <div className="mb-8">
           <motion.h2
@@ -90,28 +91,10 @@ const MyWork = () => {
                   {project.tag}
                 </span>
 
-                {/* Subtle arrow that slides in on hover */}
-                <motion.span
-                  initial={{ opacity: 0, x: -8 }}
-                  animate={{ opacity: 0, x: -8 }}
-                  variants={{
-                    hover: {
-                      opacity: 1,
-                      x: [0, 4, 0],
-                      transition: {
-                        x: {
-                          repeat: Infinity,
-                          duration: 0.6,
-                          ease: "easeInOut",
-                        },
-                        opacity: { duration: 0.2 },
-                      },
-                    },
-                  }}
-                  className="text-zinc-400 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors duration-300 font-bold"
-                >
-                  ↗
-                </motion.span>
+                {/* Premium sleek arrow icon */}
+                <span className="text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 transition-all duration-300 opacity-0 group-hover:opacity-100 -translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0">
+                  <ArrowUpRight className="w-5 h-5" />
+                </span>
               </div>
             </motion.a>
           ))}

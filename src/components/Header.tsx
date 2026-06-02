@@ -14,6 +14,7 @@ export default function Header() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
         className="flex items-center gap-3 cursor-pointer"
       >
         <div className="w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden border border-zinc-200 dark:border-zinc-700">
@@ -23,13 +24,14 @@ export default function Header() {
             width={40}
             height={40}
             className="w-full h-full object-cover"
+            priority
           />
         </div>
         <span className="font-semibold text-lg tracking-tight logo-font text-xl">
           Sahil
         </span>
       </motion.div>
-      <nav className="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+      <nav className="flex items-center gap-1 md:gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,7 +39,7 @@ export default function Header() {
         >
           <Link
             href="#work"
-            className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            className="px-3 py-1.5 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-zinc-100 transition-all"
           >
             Work
           </Link>
@@ -51,7 +53,7 @@ export default function Header() {
             href="/assets/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            className="px-3 py-1.5 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-zinc-100 transition-all"
           >
             Resume
           </a>
@@ -60,6 +62,7 @@ export default function Header() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+          className="flex items-center justify-center pl-2"
         >
           <ThemeToggle />
         </motion.div>

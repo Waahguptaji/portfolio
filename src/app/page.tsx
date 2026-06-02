@@ -8,9 +8,9 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-3xl px-6 pb-12 md:pb-20 text-zinc-900 dark:text-zinc-100 font-sans">
+    <main className="mx-auto max-w-3xl px-6 text-zinc-900 dark:text-zinc-100 font-sans">
       <Header />
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-12 md:gap-16">
         <Hero />
         <Projects />
         <Experience />

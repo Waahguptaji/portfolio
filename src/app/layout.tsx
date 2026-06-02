@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
+    <html lang="en" className="h-full scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.className} h-full bg-white dark:bg-slate-900`}>
         <Providers>
           {/* Global Ambient Glow */}
